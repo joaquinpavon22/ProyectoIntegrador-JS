@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CromosTeam-LoginUser</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+
+      
+      
+      <main class="container2">
+      <div class="section-container header-container">
+          <header class="header">
+              <div class="logo-container">
+                  <img src="assets/LogoCT.png" alt="Logo" />
+                </div>
+                <nav class="navbar">
+                    <label for="toggle-menu" class="ham"><i class="fas fa-bars"></i></label>
+                    <input type="checkbox" id="toggle-menu" />
+                    <ul class="navbar-list">
+                        <li id="icon-home" class="nav-item">
+                            <i class="fa-solid fa-house"></i>
+                            <p><a href="index.html">Home</a></p>
+                        </li>
+                        <li id="icon-user" class="nav-item">
+                            <i class="fa-brands fa-youtube"></i>
+                            <p><a href="#">Conocenos</a></p>
+                        </li>
+                        <li id="icon-user" class="nav-item">
+                            <i class="fa-solid fa-user"></i>
+                            <p><a href="login.html">user</a></p>
+                        </li>
+                        
+                    </ul>
+                </nav>
+            </div>
+
+              <div class="box_container">
+                <div class="caja_trasera">
+                    <div class="caja_trasera-login">
+                        <h3>¿Ya tienes una cuenta?</h3>
+                        <p>Inicia sesión para ver </p>
+                        <button id="btn_iniciar-sesion" class="btn-l">Iniciar sesión</button>
+                    </div>
+                    <div class="caja_trasera-register">
+                        <h3>¿Aún no tienes una cuenta?</h3>
+                        <p>Registrate y no te pierdas de nada! </p>
+                        <button id="btn_registrarse" class="btn-l">Registrarse</button>
+                    </div>
+                </div>
+
+                <div class="container-login-register">
+                    <form action="" class="formulario-login">
+                        <h2>Iniciar Sesión </h2>
+                        <input type="text" placeholder="Corre Electronico">
+                        <input type="password" placeholder="contraseña">
+                        <button>Entrar</button>
+                    </form>
+
+                    <form action="" class="formulario-register">
+
+                        <h2>Registrarse</h2>
+                        <input type="text" placeholder="Nombre Completo">
+                        <input type="text"  placeholder="Correo Electronico">
+                        <input type="text" placeholder="Nombre de Usuario">
+                        <input type="password" placeholder="Ingrese su contraseña">
+                        <button>Registrarse</button>
+                    </form>
+                </div>
+                
+              </div>
+
+              <section class="content_container">
+                <footer>
+                 <div class="footer-one">
+                   <div class="footer-one">
+                     <a href="#">Terminos de uso</a>
+                     <a href="#">Contactanos</a>
+                     <a href="#">Privacidad</a>
+                    </div>
+                  </div>
+                  <div class="footer_two">
+                    <ul class="wrapper">
+                      <li class="icon facebook">
+                        <span class="tooltip">Facebook</span>
+                        <span><i class="fab fa-facebook-f"></i></span>
+                      </li>
+                      <li class="icon twitter">
+                        <span class="tooltip">Twitter</span>
+                        <span><i class="fab fa-twitter"></i></span>
+                      </li>
+                      <li class="icon instagram">
+                        <span class="tooltip">Instagram</span>
+                        <span><i class="fab fa-instagram"></i></span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="copy-footer">
+                    <p>@2021-2022 Hecho con amor por Joaquín Pavón</p>
+                  </div>
+                </footer>
+                
+              </section>
+    </main>
+    <script src="login.js"></script>
+  </body>
+</html>

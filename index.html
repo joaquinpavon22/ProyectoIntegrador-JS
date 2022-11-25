@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CromosTeam</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <!-- HEADER START  -->
+      <div class="section-container header-container">
+      <header class="header">
+        <div class="logo-container">
+      <img src="assets/LogoCT.png" alt="Logo" />
+        </div>
+        <nav class="navbar">
+          <label for="toggle-menu" class="ham"><i class="fas fa-bars"></i></label>
+          <input type="checkbox" id="toggle-menu" />
+          <ul class="navbar-list">
+            <li id="icon-home" class="nav-item">
+              <i class="fa-solid fa-house"></i>
+              <p><a href="#home">Home</a></p>
+            </li>
+            <li id="icon-user" class="nav-item">
+              <i class="fa-brands fa-youtube"></i>
+              <p><a href="#">Conocenos</a></p>
+            </li>
+            <li id="icon-user" class="nav-item">
+              <i class="fa-solid fa-user"></i>
+              <p><a href="login.html">user</a></p>
+            </li>
+        
+          </ul>
+        </nav>
+        <div class="navbar2">
+          <li id="icon-cart" class="icon-cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </li>
+        
+          
+        </div>
+      </header>
+     </div>
+     
+     
+      </div>
+      <div id="overlay"></div>
+
+      <!-- Cart start  -->
+      <div id="cartList" class="cartList">
+        <div class="content_btn_check">
+          <button class="check-out">x</button>
+        </div>
+        <h2>Tus Productos</h2>
+        <div class="content_cart_products">
+          <!-- <div class="cart_products">
+                    <div class="product_img">
+                        <img src=${img} alt=${name} />
+                    </div>
+                    <div class="product_text">
+                      <p class="product_name">${name}</p>
+                      <p class="opacity">${talle}</p>
+                      <p class="product_price">$ ${price}</p>
+                    </div>
+                    <div class="product_button">
+                      <button class="minus">
+                        <p class="down" data-id=${id}>-</p>
+                      </button>
+                        <p class="quantity">${quantity}</p>
+                      <button>
+                        <p class="up" data-id=${id}>+</p>
+                      </button>
+                    </div>
+                </div> -->
+                
+        </div>
+        <div class="total_price_content">
+          <div class="subT">
+            <p>Subtotal:</p>
+            <p>$ 0</p>
+          </div>
+          <div class="subT">
+            <p>Envío:</p>
+            <p>Gratis</p>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="total_price_content">
+          <div class="subT">
+            <h4>Total:</h4>
+            <h4 id="total">$ 0</h4>
+          </div>
+        </div>
+        <div class="btn_cart_buy">
+          <button class="buy_btn">COMPRAR</button>
+          <p class="opacity" id="viewMore">Ver más productos</p>
+        </div>
+      </div>
+
+      <!-- Hero start  -->
+      <section class="content_container">
+        <div class="container__hero" id="home">
+          <div class="hero">
+            <div class="text">
+              <h1>¿Quíenes somos?</h1>
+
+              <p class="p-portada">
+                Somos CromosTeam, una tienda dedicada a la venta de las nuevas camisetas de la Seleccion Argentina
+                rumbo a Qatar🏆.Registrate y no te pierdas de nuestras ofertas!
+              </p>
+
+             <a href="login.html">
+
+               <button class="register">Registrarse</button>
+              </a>
+              
+            </div>
+
+            <div class="svg">
+              <img src="assets/Portada-hero.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seccion proximos  -->
+      <section class="content_container">
+        <div class="next">
+          <div class="content_next">
+            <p class="text_one p_next">Proximamente...</p>
+            <div class="cards_next">
+              <div class="card hov">
+                <div class="img_card">
+                  <img src="./assets/Nextplayer.png" alt="" />
+                </div>
+                <div class="texts_card">
+                  <p class="text_two">Harry Maguire</p>
+                  <p class="opacity">El capi</p>
+                  <p class="price_card">$??usd</p>
+                </div>
+              </div>
+              <div class="card hov">
+                <div class="img_card">
+                  <img src="./assets/Nextplayer (2).png" alt="" />
+                </div>
+                <div class="texts_card">
+                  <p class="text_two">Kylian Mbappee</p>
+                  <p class="opacity">La tortuga</p>
+                  <p class="price_card">$??usd</p>
+                </div>
+              </div>
+              <div class="card hov">
+                <div class="img_card">
+                  <img src="./assets/Nextplayer (3).png" alt="" />
+                </div>
+                <div class="texts_card">
+                  <p class="text_two">Gabriel jesus</p>
+                  <p class="opacity">pq esa cara?</p>
+                  <p class="price_card">$??usd</p>
+                </div>
+              </div>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Categorias -->
+      <section class="content_container">
+        <div class="categories">
+          <p class="cat_title">Categorias</p>
+          <div class="category">
+            <div class="container_categories">
+                <button class="card_category hov" data-category="limit">Edicion limitada</button>
+                <button class="card_category hov" data-category="porteros">Porteros</button>
+                <button class="card_category hov" data-category="defensa">Defensor</button>
+                <button class="card_category hov" data-category="mediocampistas">Mediocampistas</button>
+                <button class="card_category hov" data-category="delanteros">Delanteros</button>
+                <button class="card_category hov" data-category="niños">Niño</button>
+               
+           
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- productos  -->
+      <!-- PRODUCTOS -->
+      <section class="content_container">
+        <div class="sec_populares">
+          <div class="populares">
+            <p class="text_one p_reco">Cual falta en tu colección?</p>
+            <div class="container_populares" id="product">
+              <!-- <div class="card-populares hov" id="product">
+                                <div class="img_popular">
+                                    <img src=${img} alt=${name}>
+                                </div>
+                                <div class="content_text_cards">
+                                  <div class="text-populares">
+                                      <p class="text_two">${name}</p>
+                                      <p class="opacity">${talle}</p>
+                                      <p class="club">${club}</p>
+                                      <p class="price_card">$ ${price}</p>
+                                
+                                  </div>
+                                  <div class="btn">
+                                      <button class="btn_add" id="btn_add"
+                                      data-id="${id}"
+                                      data-name="${name}"
+                                      data-opacity="${talle}"
+                                      data-club="${club}"
+                                      data-price="${price}"
+                                      data-img="${img}">Agregar</button>
+                                  </div>
+                                </div>
+                             </div>
+            </div> -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Seccion encontranos  -->
+      <section class="content_container">
+       <div class="section_ubication">
+        <p class="text_one">Nos encontramos en:</p>
+         <div class="first_ubi">
+           <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28486.451635850568!2d-65.29765989445185!3d-26.8142906876659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942242d70e26d285%3A0xec12e09b93c231ac!2sYerba%20Buena%20Shopping!5e0!3m2!1ses-419!2sar!4v1668607001946!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+           <div class="Text">
+            <h3>Portal Tucumán</h3>
+            <p>Telefono 555-55555</p>
+            <p>Email cromos@gmail.com</p>
+           </div>
+          </div>
+          
+          <div class="second_ubi">
+            
+            <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13140.73384857897!2d-58.443266451358795!3d-34.574224127592075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5997d130b97%3A0x44eb1b0e4cb1d691!2sPortal%20Palermo!5e0!3m2!1ses-419!2sar!4v1668607116147!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            <div class="text">
+              <h3>Portal Palermo</h3>
+              <p>Telefono: 444-44444</p>
+              <p>Email: cromos@gmail.com</p>
+              </div>
+          </div>
+        </div>
+          
+      </section>
+       <!-- Footer -->
+
+       <section class="content_container">
+        <footer>
+         <div class="footer-one">
+           <div class="footer-one">
+             <a href="#">Terminos de uso</a>
+             <a href="#">Contactanos</a>
+             <a href="#">Privacidad</a>
+            </div>
+          </div>
+          <div class="footer_two">
+            <ul class="wrapper">
+              <li class="icon facebook">
+                <span class="tooltip">Facebook</span>
+                <span><i class="fab fa-facebook-f"></i></span>
+              </li>
+              <li class="icon twitter">
+                <span class="tooltip">Twitter</span>
+                <span><i class="fab fa-twitter"></i></span>
+              </li>
+              <li class="icon instagram">
+                <span class="tooltip">Instagram</span>
+                <span><i class="fab fa-instagram"></i></span>
+              </li>
+            </ul>
+          </div>
+          <div class="copy-footer">
+            <p>@2021-2022 Hecho con amor por Joaquín Pavón</p>
+          </div>
+        </footer>
+        
+      </section>
+
+      <div class="modal"></div>
+      <script src="data.js"></script>
+      <script src="main.js"></script>
+    </main>
+  </body>
+</html>
+
+
